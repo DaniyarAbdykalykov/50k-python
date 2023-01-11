@@ -8,4 +8,6 @@ str_4 = 'крутым'
 
 str_5 = 'программистом!'
 
-print(str_1 + str_2 + str_3 + str_4 + str_5)
+print(str_1 + ' ' + str_2 + ' ' + str_3 + ' ' + str_4 + ' ' + str_5)
+
+print(f'{str_2} {str_3} {str_1} {str_4} {str_5}')
