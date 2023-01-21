@@ -5,7 +5,7 @@ b = 'b'
 if a < b:
     print(f'yes, {a} < {b}')
 
-c = lower(input('Введите число'))
+c = input('Введите число')
 print(c)
 
 a = -10
