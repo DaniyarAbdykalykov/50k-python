@@ -8,3 +8,4 @@ def mydivision(num_1, num_2):
 a = int(input())
 b = int(input())
 print(mydivision(a, b))
+print(3+2)
