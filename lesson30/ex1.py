@@ -20,3 +20,4 @@ class Point:
 
 pt = Point(1, 2)
 
+print(pt.get_coords)

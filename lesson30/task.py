@@ -25,8 +25,18 @@ class Elves:
             if self.rank == 5:
                 self.speciality = "sniper"
                 print(f'Ура! Теперь я {self.speciality}')
+    
+    def set_attr(self, number_of_arrow, lord, bow_type):
+        self.__number_of_arrow = number_of_arrow
+        self.__lord = lord
+        self.__bow_type = bow_type
 
+    def get_attr(self):
+        return f'Тип моего лука - {self.__bow_type}, стрел к нему {self.__number_of_arrow}. Мой господин {self.__lord}'
 
+    def __str__(self):
+        return f'Я {self.name} из племени {self.tribe}'
+        
 
 class Wizards:
     number_of_eyes = 2
@@ -62,12 +72,18 @@ class Wizards:
 
     def mana_increase(self, mana: int | float):
         self.amount_of_mana += mana
+
+    def set_attr(self, weapon, lord):
+        self.__weapon = weapon
+        self.__lord = lord
+
+    def get_attr(self):
+        return f'Мое оружие - {self.__weapon}, мой господин - {self.__lord}'
+
+    def __str__(self):
+        return f'Я {self.name} из отряда {self.squad}'
         
 
 elf_1 = Elves("Legolas", "Sindar", 90, "Thranduil")
 wizard_1 = Wizards('Gandalf', 'Maiar', 'air', 'staff', 100, 'Manwe')
 
-
-elf_1._Elves__lord = "Sauron"
-
-print(elf_1._Elves__lord)
